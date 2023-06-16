@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Focused: The Study Helper",
   "version": "1.0.0",
-  "description": "A study helper that helps you focus with pomodoro timer, to-do lists and more!",
+  "description": "A study helper that helps you to be focused by pomodoro timer, to-do lists and more!",
   "icons": {
     "16": "icon.png",
     "48": "icon.png",
