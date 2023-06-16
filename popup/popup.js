@@ -66,6 +66,8 @@ tasksElem.addEventListener("change", (e) => {
 });
 
 tasksElem.addEventListener("click", (e) => {
+  const taskCount = lastTask();
+
   for (let i = 0; i < taskCount; i++) {
     if (parseInt(e.target.id.split("btn-task-delete-")[1]) === i) {
       if (Object.keys(tasks).length === 1) {
