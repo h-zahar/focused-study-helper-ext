@@ -70,7 +70,8 @@ tasksElem.addEventListener("click", (e) => {
   for (let i = 0; i < taskCount; i++) {
     if (parseInt(e.target.id.split("btn-task-delete-")[1]) === i) {
       if (Object.keys(tasks).length === 1) {
-        tasks[i] = "";
+        delete tasks[i];
+        tasks[0] = "";
         tasksElem.textContent = "";
 
         saveTasks(tasks);
