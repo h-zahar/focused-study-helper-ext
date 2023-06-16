@@ -36,13 +36,12 @@ const lastTask = () => {
             tasksElem.children.length - 1
           ].children[1].id.split("btn-task-delete-")[1]
         ) + 1
-      : 0;
+      : -1;
   return taskCount;
 };
 
 const addTask = () => {
-  const taskCount =
-    Object.keys(tasks).length > 0 ? Object.keys(tasks).length : 0;
+  const taskCount = lastTask() === -1 ? 0 : lastTask();
   const taskElem = document.createElement("div");
   taskElem.id = `task-${taskCount}`;
   taskElem.classList.add("task");
