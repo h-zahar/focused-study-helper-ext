@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./popup.css" />
+
+    <title>Focused: The Study Helper</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="../icon.png" alt="Focused Logo" />
+    </div>
+
+    <div>
+      <h1>00:00:00</h1>
+      <button id="btn-start">Start Timer</button>
+      <button id="btn-task-add">Add Task</button>
+    </div>
+
+    <div id="task-list">
+      <div id="task-0" class="task">
+        <input type="text" id="task-name-0" placeholder="Manifest Your Task!" />
+        <button id="btn-task-delete-0" class="btn-delete">X</button>
+      </div>
+    </div>
+
+    <script src="./popup.js"></script>
+  </body>
+</html>
